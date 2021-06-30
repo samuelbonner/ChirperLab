@@ -9,25 +9,29 @@ const Input = () => {
       id: "1",
       username: "Mac",
       message: "Meow World!",
-      datestamp: `${new Date("2021-06-30T18:31:00.000Z").toLocaleString()}`,
+      datestamp: `${new Date("2021-06-30T18:31:00.000Z").toLocaleDateString()}`,
+      timestamp: `${new Date("2021-06-30T18:31:00.000Z").toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`,
     },
     {
       id: "2",
       username: "Koot",
       message: "Meow yourself, Mac!!",
-      datestamp: `${new Date("2021-06-30T18:33:00.000Z").toLocaleString()}`,
+      datestamp: `${new Date("2021-06-30T18:33:00.000Z").toLocaleDateString()}`,
+      timestamp: `${new Date("2021-06-30T18:33:00.000Z").toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`,
     },
     {
       id: "3",
       username: "Mac",
       message: "BIRD ALERT! A robin near the left fence! #bigbird",
-      datestamp: `${new Date("2021-06-30T18:33:30.000Z").toLocaleString()}`,
+      datestamp: `${new Date("2021-06-30T18:33:30.000Z").toLocaleDateString()}`,
+      timestamp: `${new Date("2021-06-30T18:33:30.000Z").toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`,
     },
     {
       id: "4",
       username: "Koot",
       message: "MEOW! Engaging tail-wag and deploying big eyes!",
-      datestamp: `${new Date("2021-06-30T18:34:00.000Z").toLocaleString()}`,
+      datestamp: `${new Date("2021-06-30T18:34:00.000Z").toLocaleDateString()}`,
+      timestamp: `${new Date("2021-06-30T18:34:00.000Z").toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`,
     },
   ]);
 
@@ -36,7 +40,8 @@ const Input = () => {
     let newMeows = {
       username: username,
       message: message,
-      datestamp: date.toLocaleString(),
+      datestamp: date.toLocaleDateString(),
+      timestamp: date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
     };
     setMeows([...meows, newMeows]);
     setUsername("");
