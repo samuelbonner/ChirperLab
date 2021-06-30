@@ -14,3 +14,12 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // * **HINT:** This lab will require array manipulation with React's immutable state. You may need to do some Google detective work to see how React state and arrays work together when "updating" them with new values.
 // ## Advanced (optional)
 // * Look into the npm packages of uuid for generating unique keys for each chirp, moment for nicely formatting timestamps for each chirp, and react-icons to add some SVG icons to really add that cool style to your Chirper lab.
+
+
+/*
+1. A "timeline" should load on page load.
+    Should be populated with at least 3 'previous' chirps.
+2. Create a form
+    Form should have at least 2 inputs (username + message)
+3. When form is submitted, the new chirp (username + message) should be shown in the timeline.
+*/
